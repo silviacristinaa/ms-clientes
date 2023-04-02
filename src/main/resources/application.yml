@@ -1,6 +1,9 @@
 spring:
   application:
-    name: msclientes
+    name: mscustomers
+  devtools:
+    restart:
+      enabled: true
 
 server:
   port: 0
