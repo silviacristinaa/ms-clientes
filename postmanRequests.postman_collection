@@ -20,7 +20,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:58659/customers",
+					"raw": "http://localhost:8080/customers",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -39,7 +39,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:58659/customers?cpf=00000000000",
+					"raw": "http://localhost:8080/customers?cpf=00000000000",
 					"protocol": "http",
 					"host": [
 						"localhost"
