@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "c3b31000-91c8-4ef6-97d8-a62dbc8dec2f",
+		"name": "Postman requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cpf\": \"00000000000\",\r\n    \"name\": \"Test\",\r\n    \"age\": 22\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "58659",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customers?cpf=00000000000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "58659",
+					"path": [
+						"customers"
+					],
+					"query": [
+						{
+							"key": "cpf",
+							"value": "00000000000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
